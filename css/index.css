@@ -148,10 +148,11 @@ body {
 	color: #74859c;
 }
 .all {
-	background-image: url("/image/slant.svg");
+	background-image: url("/image/new_hero.svg");
 	background-repeat: no-repeat;
 	background-position: top;
 	background-size: cover;
+	min-height: 100vh;
 }
 .mobile_all {
 	background-image: url("/image/slant.svg");
@@ -470,18 +471,21 @@ body {
 #__slide {
 	width: 50%;
 }
+.pull {
+	height: 300px;
+}
 @media screen and (max-width: 700px) {
-	*:not('.embla') {
+	*:not(".embla") {
 		overflow-x: hidden;
 		position: relative;
 	}
 
-	html{
+	html {
 		overflow-x: hidden;
 		width: 100vw;
 	}
 
-	body{
+	body {
 		overflow-x: hidden;
 		width: 100vw;
 	}
