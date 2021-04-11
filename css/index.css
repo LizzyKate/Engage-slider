@@ -474,12 +474,8 @@ body {
 .pull {
 	height: 300px;
 }
-@media screen and (max-width: 700px) {
-	*:not(".embla") {
-		overflow-x: hidden;
-		position: relative;
-	}
 
+@media screen and (max-width: 900px) {
 	html {
 		overflow-x: hidden;
 		width: 100vw;
@@ -488,6 +484,16 @@ body {
 	body {
 		overflow-x: hidden;
 		width: 100vw;
+	}
+	*:not(".embla") {
+		overflow-x: hidden;
+		position: relative;
+	}
+}
+@media screen and (max-width: 700px) {
+	*:not(".embla") {
+		overflow-x: hidden;
+		position: relative;
 	}
 }
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
