@@ -77,7 +77,8 @@ body {
 	height: 450px;
 }
 #mobile_slide {
-	max-width: 247.7px;
+	/* max-width: 247.7px; */
+	width: 100%;
 	margin-top: -57px;
 }
 
@@ -470,9 +471,19 @@ body {
 	width: 50%;
 }
 @media screen and (max-width: 700px) {
-	* {
+	*:not('.embla') {
 		overflow-x: hidden;
 		position: relative;
+	}
+
+	html{
+		overflow-x: hidden;
+		width: 100vw;
+	}
+
+	body{
+		overflow-x: hidden;
+		width: 100vw;
 	}
 }
 @media screen and (min-width: 1200px) and (max-width: 1300px) {
