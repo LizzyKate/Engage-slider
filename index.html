@@ -664,19 +664,20 @@
 	<section class="__mobile" style="width:100vw">
 		<section class="flow">
 
-			
-				<!-- site-navbar start -->
-				<div class="navbar-area">
-				 
-					<nav class="site-navbar fixed w-full frost flex justify-between items-center bg-white z-50" style="padding: 34px 30px;">
-					  <!-- site logo -->
-					
-				<a href="/index.html">
-					<img src="/image/logo.svg" alt="Engage image" />
-				</a>
-			  
-					  <!-- site menu/nav -->
-					  <ul>
+
+			<!-- site-navbar start -->
+			<div class="navbar-area">
+
+				<nav class="site-navbar fixed w-full frost flex justify-between items-center bg-white z-50"
+					style="padding: 34px 30px;">
+					<!-- site logo -->
+
+					<a href="/index.html">
+						<img src="/image/logo.svg" alt="Engage image" />
+					</a>
+
+					<!-- site menu/nav -->
+					<ul>
 						<li class="text-sm  font-semibold">
 							<a href="/engage/about.html" class="">Company</a>
 						</li>
@@ -692,25 +693,27 @@
 						<li class="text-sm  font-semibold">
 							<a href="/engage/use_case.html">Use Case</a>
 						</li>
-					
-							<li  style="border-radius: 14px; width: 50%;" class=" __register text-sm py-3 px-6 text-white font-semibold focus:outline-none">
-								<a href="#" style="padding: 0;">Login</a>
-							</li>
-							<li class="__register text-sm py-3 px-6 text-white font-semibold focus:outline-none" style="margin-top: 25px;  width: 50%;">
-								<a href="#" style="padding: 0;">Register</a>
-							</li>
-					  </ul>
-			  
-					  <!-- nav-toggler for mobile version only -->
-					  <button class="nav-toggler focus:outline-none">
+
+						<li style="border-radius: 14px; width: 50%;"
+							class=" __register text-sm py-3 px-6 text-white font-semibold focus:outline-none">
+							<a href="#" style="padding: 0;">Login</a>
+						</li>
+						<li class="__register text-sm py-3 px-6 text-white font-semibold focus:outline-none"
+							style="margin-top: 25px;  width: 50%;">
+							<a href="#" style="padding: 0;">Register</a>
+						</li>
+					</ul>
+
+					<!-- nav-toggler for mobile version only -->
+					<button class="nav-toggler focus:outline-none">
 						<span></span>
-					  </button>
-					</nav>
-				
-				</div><!-- navbar-area end -->
-			  
-		
-		
+					</button>
+				</nav>
+
+			</div><!-- navbar-area end -->
+
+
+
 			<!-- intro -->
 			<div class="mobile_cus" style="padding: 114px 29px 0 31px;">
 				<h4 class="font-semibold text-5xl">
@@ -730,7 +733,7 @@
 			</div>
 
 			<!-- banner -->
-			<section class="" >
+			<section class="">
 				<section class="mobile_all relative">
 
 					<!-- slider -->
@@ -740,15 +743,13 @@
 							<div class="">
 								<div class="embla_mobile">
 									<div class="embla__container">
-										<div class="embla__slide">
-											<img src="/image/pic.svg" alt="Engage image" />
-										</div>
-										<div class="embla__slide">
-											<img src="/image/smile.svg" alt="Engage image" />
-										</div>
-										<div class="embla__slide">
-											<img src="/image/pic.svg" alt="Engage image" />
-										</div>
+										<!-- <div> -->
+										<img src="/image/slider_one.svg" alt="Engage image" class="embla__slide" />
+										<!-- </div> -->
+
+										<!-- <div class="embla__slide"> -->
+										<img src="/image/slider_one.svg" alt="Engage image" class="embla__slide" />
+										<!-- </div> -->
 									</div>
 								</div>
 
@@ -801,20 +802,7 @@
 							<img src="/image/stripe.svg" alt="Engage image" class="w-3/4" />
 						</div>
 					</div>
-					<div class="absolute  mobile_info ">
-						<div class=" bg-white __pic py-3 px-4" style="max-height: 39.8px; max-width: 137.22px; border-radius: 13.194px;
-					">
-							<img src="/image/deliver.svg" alt="Engage image" />
-						</div>
-						<div class="mt-5 bg-white __pic py-3 px-4" style="max-height: 39.8px; max-width: 137.22px; border-radius: 13.194px;
-					">
-							<img src="/image/active.svg" alt="Engage image" />
-						</div>
-						<div class="mt-5 bg-white __pic py-3 px-4" style="max-height: 39.8px; max-width: 137.22px; border-radius: 13.194px;
-					">
-							<img src="/image/like.svg" alt="Engage image" />
-						</div>
-					</div>
+
 				</section>
 
 			</section>
@@ -1298,7 +1286,7 @@
 
 		// togglerClick function
 		function togglerClick() {
-		
+
 			navToggler.classList.toggle('toggler-open');
 			navMenu.classList.toggle('open');
 			if (navMenu.classList.contains('open')) {
@@ -1337,7 +1325,6 @@
 
 		(function () {
 			document.addEventListener("scroll", function (e) {
-
 				// console.log(window.pageYOffset, menu.offsetHeight);
 				if (window.pageYOffset > 10) {
 					menu.classList.add("scrolled");
